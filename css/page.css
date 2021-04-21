@@ -198,12 +198,13 @@ body {
 }
 
 .block-box .block-item {
-  margin: 4rem auto;
+  height: 10rem;
+  margin: 2rem auto;
+  position: relative;
 }
 
 .block-box .block-item .left-point {
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
@@ -211,6 +212,11 @@ body {
   line-height: 2rem;
   border: .2rem solid #d7e5fd;
   position: relative;
+  left: 1rem;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
 }
 
 .block-box .block-item .left-point .in-point {
@@ -248,10 +254,10 @@ body {
 .wire {
   position: absolute;
   width: .2rem;
-  height: 40rem;
+  height: 45rem;
   background: #d7e5fd;
-  left: 1.75rem;
-  top: 3rem;
+  left: 1.9rem;
+  top: 5rem;
 }
 
 .footer {
@@ -272,6 +278,18 @@ body {
 
 .footer .friend {
   margin: .5rem 0;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.5rem;
+  border-left: .5rem solid transparent;
+  border-right: .5rem solid transparent;
+  border-top: 1rem solid #d7e5fd;
 }
 
 @-webkit-keyframes down {
